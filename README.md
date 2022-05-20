@@ -1,7 +1,7 @@
 # Weather app
 
 ## Screen Grabs
-![main](./public/images/main.png)
+![main](./public/images/main-screen.png)
 
 # Getting Started with Create React App
 
