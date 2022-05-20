@@ -1,0 +1,70 @@
+.forecast {
+    display: block;
+    background: #8ba2d1;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+
+    &-title {
+        text-align: left;
+    }
+
+    &-items {
+        display:flex;
+        overflow-x: scroll;
+
+        /* width */
+        &::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        &::-webkit-scrollbar-track,
+        &::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            border-color: transparent;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+        background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        }
+    }
+
+    &-item {
+        display: flex;
+        border-right: 1px solid rgb(245, 236, 236);
+        display: flex;
+        border-right: 1px solid #eaeaea;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+
+        &__hour {
+            font-size: 18px;
+        }
+       
+
+        &:last-of-type {
+            border-right: 0px;
+        }
+
+        &__hour, &__temp, &__description {
+            margin: 2px auto;
+        }
+
+        &__hour {
+            color: rgb(245, 236, 236);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.search-bar {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &__form {
+        display: flex;
+    }
+
+    &__button, &__input {
+        background: transparent;
+        border: 1px solid #fff;
+    }
+
+    &__button {
+        border-left:0px;
+        border-bottom-left-radius: 7px;
+        border-top-left-radius: 7px;
+
+    }
+
+    &__input {
+        border-left:0px;
+        border-bottom-right-radius: 7px;
+        border-top-right-radius: 7px;
+        height: 25px;
+        flex-grow: 1;
+    }
+}
