@@ -16,14 +16,14 @@ class CurrentWeather extends React.Component {
             <div className='current-weather'>
                 <div className='current-weather__content'>
                     <div className='current-weather__text'>
-                        <p className='current-weather__temp'>{this.props.currentTemperature}°</p> 
+                        <p className='current-weather__temp'>{Math.trunc(this.props.currentTemperature)}°</p> 
                         <p className='current-weather__description'>{this.props.description}</p> 
                     </div>
                     {img}
                 </div>
                 <div>
                     <p className='current-weather__feels-like'>Feels like
-                    {' '+ this.props.feelsLike}°</p>
+                    {' '+ Math.trunc(this.props.feelsLike)}°</p>
                 </div>
             </div>
         )
